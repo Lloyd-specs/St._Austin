@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "patients": "Patients",
+    "appointments": "Appointments",
+    "queue": "Queue",
+    "billing": "Billing",
+    "consultations": "Consultations",
+    "prescriptions": "Prescriptions",
+    "laboratory": "Laboratory",
+    "pharmacy": "Pharmacy",
+    "stock": "Stock",
+    "dispensation": "Dispensation",
+    "pharmacheck": "PharmaCheck",
+    "reports": "Reports",
+    "users": "Users",
+    "settings": "Settings",
+    "reception": "Reception",
+    "medicalRecords": "Medical Records",
+    "patientRecord": "Patient Record",
+    "direction": "Management",
+    "admin": "Administration",
+    "results": "Results"
+  },
+  "auth": {
+    "login": "Sign in",
+    "logout": "Sign out",
+    "email": "Email address",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "loginTitle": "Sign in to SIH",
+    "loginSubtitle": "Hospital Information System",
+    "invalidCredentials": "Invalid email or password"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "loading": "Loading...",
+    "noResults": "No results",
+    "confirm": "Confirm",
+    "actions": "Actions",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "filter": "Filter",
+    "export": "Export",
+    "print": "Print",
+    "underDevelopment": "Module under development"
+  },
+  "patients": {
+    "title": "Patients",
+    "newPatient": "New patient",
+    "patientId": "Patient ID",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "dateOfBirth": "Date of birth",
+    "sex": "Sex",
+    "phone": "Phone",
+    "address": "Address",
+    "bloodType": "Blood type",
+    "allergies": "Allergies",
+    "insurance": "Insurance"
+  },
+  "roles": {
+    "admin_systeme": "Administrator",
+    "accueil": "Reception",
+    "medecin": "Doctor",
+    "infirmier": "Nurse",
+    "pharmacien": "Pharmacist",
+    "directeur": "Director"
+  },
+  "offline": {
+    "banner": "Offline mode - Changes will sync automatically"
+  }
+}

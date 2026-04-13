@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Django Backend",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["backend/manage.py", "runserver", "0.0.0.0:8000"],
+      "port": 8000
+    },
+    {
+      "name": "Next.js Frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "frontend"],
+      "port": 3000
+    },
+    {
+      "name": "Celery Worker",
+      "runtimeExecutable": "celery",
+      "runtimeArgs": ["-A", "config", "worker", "-l", "info"],
+      "port": 0
+    },
+    {
+      "name": "Docker Compose (All Services)",
+      "runtimeExecutable": "docker",
+      "runtimeArgs": ["compose", "up"],
+      "port": 0
+    }
+  ]
+}

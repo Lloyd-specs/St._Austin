@@ -1,0 +1,50 @@
+[
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000001",
+    "fields": {
+      "name": "admin_systeme",
+      "description": "Administrateur Systeme - Gestion des utilisateurs et configuration"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000002",
+    "fields": {
+      "name": "accueil",
+      "description": "Personnel d'Accueil - Enregistrement et orientation des patients"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000003",
+    "fields": {
+      "name": "medecin",
+      "description": "Medecin - Consultation, diagnostic, prescription"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000004",
+    "fields": {
+      "name": "infirmier",
+      "description": "Infirmier - Administration des soins, prise de constantes"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000005",
+    "fields": {
+      "name": "pharmacien",
+      "description": "Pharmacien - Delivrance des medicaments, gestion du stock"
+    }
+  },
+  {
+    "model": "accounts.role",
+    "pk": "a1000000-0000-0000-0000-000000000006",
+    "fields": {
+      "name": "directeur",
+      "description": "Directeur - Consultation des rapports et statistiques"
+    }
+  }
+]

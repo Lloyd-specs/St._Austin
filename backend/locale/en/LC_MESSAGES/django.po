@@ -1,0 +1,33 @@
+# English translations for SIH
+# Hospital Information System - Cameroon
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SIH 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Patient registered successfully."
+msgstr "Patient registered successfully."
+
+msgid "Appointment created successfully."
+msgstr "Appointment created successfully."
+
+msgid "Invoice created successfully."
+msgstr "Invoice created successfully."
+
+msgid "Payment recorded successfully."
+msgstr "Payment recorded successfully."
+
+msgid "Prescription signed successfully."
+msgstr "Prescription signed successfully."
+
+msgid "Password changed successfully."
+msgstr "Password changed successfully."
+
+msgid "Incorrect current password."
+msgstr "Incorrect current password."
