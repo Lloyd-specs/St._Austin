@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { useAuthStore } from '@/store/authSlice';
@@ -17,16 +17,29 @@ export default function DashboardLayout({
   const locale = useLocale();
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
   const hydrate = useAuthStore((s) => s.hydrate);
+  const [hydrated, setHydrated] = useState(false);
 
+  // First: hydrate auth state from localStorage
   useEffect(() => {
     hydrate();
+    setHydrated(true);
   }, [hydrate]);
 
+  // Second: only redirect AFTER hydration is complete
   useEffect(() => {
-    if (!isAuthenticated) {
+    if (hydrated && !isAuthenticated) {
       router.push(`/${locale}/login`);
     }
-  }, [isAuthenticated, router, locale]);
+  }, [hydrated, isAuthenticated, router, locale]);
+
+  // Show nothing until we've checked localStorage
+  if (!hydrated) {
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-teal-700"></div>
+      </div>
+    );
+  }
 
   if (!isAuthenticated) {
     return null;
