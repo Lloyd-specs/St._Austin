@@ -11,6 +11,7 @@ django-cors-headers==4.7.0
 # API
 drf-spectacular==0.28.0
 django-filter==25.1
+drf-nested-routers==0.94.1
 
 # Background tasks
 celery==5.4.0
@@ -23,7 +24,7 @@ channels-redis==4.2.1
 daphne==4.1.2
 
 # Security & Encryption
-django-cryptography==2.2
+cryptography==44.0.0
 django-axes==7.1.0
 
 # File handling
