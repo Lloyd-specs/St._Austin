@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { useAuthStore } from '@/store/authSlice';
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher';
 
 export default function LoginPage() {
   const t = useTranslations();
   const router = useRouter();
+  const locale = useLocale();
   const login = useAuthStore((s) => s.login);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,7 +23,7 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await login(email, password);
-      router.push('./');
+      router.push(`/${locale}/accueil/patients`);
     } catch {
       setError(t('auth.invalidCredentials'));
     } finally {
