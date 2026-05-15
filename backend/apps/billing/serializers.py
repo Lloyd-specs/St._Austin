@@ -47,7 +47,7 @@ class InvoiceListSerializer(serializers.ModelSerializer):
         model = Invoice
         fields = [
             'id', 'invoice_number', 'patient', 'patient_name',
-            'status', 'total', 'amount_due', 'currency',
+            'status', 'total', 'insurance_coverage', 'amount_due', 'currency',
             'due_date', 'created_at',
         ]
 
